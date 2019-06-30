@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link type ="text/css" rel ="stylesheet" href="static/styles.css"/>
+        <title> LC101 User-Signup</title>
+    </head>
+    <body>
+    <h1 class = "hi">User-Signup</h1>
+        <form method="post">
+            <input type="submit">
+            <br>            <br>
+            <table>
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td>
+                        <input id = "username" name="username" type="text" value="{{username}}">
+                        <span class = "error"> {{username_error}} </span>
+                    </td>
+                    <td></td>
+                    <td><label for="password">Password (required)</label></td>
+                    <td>
+                        <input id ="password" name="password" type="password" required/>
+                        <span class = "error">{{password_error}}</span>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>    
+                    <td><label for="email">Email (optional)</label></td>
+                    <td>
+                        <input id= "email" name="email" value="{{email}}">
+                        <span class = "error">{{email_error}}</span>
+                    </td>
+                    <td></td>
+                    <td><label for="verify">Verify Password (required)</label></td>
+                    <td>
+                        <input id= "verify" name="verify" type="password" required/>
+                        <span class = "error">{{verify_error}}</span>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

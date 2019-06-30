@@ -1,0 +1,14 @@
+*{
+    background-color:lightpink;
+} 
+
+.error {
+    color:red;
+}
+
+.hi{
+    background-color: lightpink;
+    color:purple;
+    border:solid darkgreen 3px;
+    text-align:center;
+}    
